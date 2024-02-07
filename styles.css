@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Love Ya Like A Sister", cursive;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #131313;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    position: relative;
+    top: -5vh;
+}
+
+.image {
+    position: relative;
+    left: 8vw;
+}
+
+.buttons_div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.button {
+    position: relative;
+    margin: 10vh;
+    border: none;
+    border-radius: 3vh;
+    background: #ff3131;
+    padding: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    font-size: 2rem;
+    font-weight: 900;
+    cursor: pointer;
+    left: -1vw;
+    box-shadow: 0vh 0vh 10vh 2vh #ff3131;
+}
+
+.button:hover {
+    box-shadow: 0vh 0vh 5vh 1vh #ff3131af;
+    background: #ff3131af;
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+        left: -1vw;
+        top: 1vh;
+    }
+    .buttons_div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    #no {
+        margin-top: 0vh;
+    }
+}
